@@ -14,6 +14,9 @@ window.TodosView = Backbone.View.extend({
   addAll: function(){
     this.$el.empty();
     this.collection.forEach(this.addOne);
+
+    // Todo: Cleanup
+    $('#app').append(this.$el);
   },
 
   addOne: function(todoItem){

@@ -12,7 +12,6 @@ window.TodoApp = new (Backbone.Router.extend({
   },
 
   index: function(){
-    console.log("fetching")
     this.todoItems.fetch();
   },
 
@@ -23,5 +22,4 @@ window.TodoApp = new (Backbone.Router.extend({
   show: function(id){
     this.todoItems.focusOnTodoItem(id);
   }
-
 }));
