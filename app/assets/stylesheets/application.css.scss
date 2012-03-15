@@ -1,0 +1,87 @@
+// -----  Reset - modified from http://meyerweb.com/eric/tools/css/reset/ ----- //
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, strong, b, ol, ul, li, form, label { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+
+// ----- Sass Variables ----- //
+
+$font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// ----- Global ----- //
+
+html {
+  background: #e4b897 image-url('bg-body.jpg') repeat;
+  font-size: 16px;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  color: #333;
+  font-family: $font-base;
+  font-size: 62.5%; /* 1em = 10px */
+  padding: 50px;
+}
+
+// ----- Base ----- //
+
+.content {
+  background: #fff;
+  border-bottom: 3px solid #e1d9d3;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  width: 500px;
+}
+#app {
+  background: image-url('bg-content.png') repeat;
+}
+
+// ----- Text ----- //
+
+h1 {
+  background: image-url('bg-todo.png') 48px 0 repeat-y;
+  font: bold 4em/80px $font-base;
+  padding: 0 20px 0 70px;
+  text-align: right;
+  text-transform: lowercase;
+}
+h3 {
+  background: image-url('bg-todo.png') 48px 0 repeat-y;
+  font: normal 1.8em/38px $font-base;
+  padding: 2px 80px 0 70px;
+  position: relative;
+}
+#app div div:last-child h3 {
+  padding-bottom: 10px;
+}
+h3 input {
+  left: 16px;
+  position: absolute;
+  top: 12px;
+}
+h3 a {
+  color: #be7837;
+  display: block;
+  font-size: 1.8em;
+  line-height: 38px;
+  opacity: 1;
+  padding-right: 20px;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  text-decoration: none;
+  top: 2px;
+  width: 40px;
+}
+h3 a:hover,
+h3 a:focus {
+  color: #8fc8d6;
+}
+.complete {
+  color: #bbb;
+  text-decoration: line-through;
+}
+.complete a {
+  color: #bbb;
+}
