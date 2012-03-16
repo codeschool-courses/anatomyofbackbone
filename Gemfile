@@ -15,7 +15,6 @@ gem 'backbone-rails', git: 'https://github.com/rubymaverick/backbone-rails.git'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'rspec-rails', '>= 2.0.1'
 end
 
 # Heroku uses postgres 

@@ -11,3 +11,8 @@ Todo.find_or_initialize_by_description('Pick up milk').tap do |todo|
   todo.status = 'incomplete'
   todo.save!
 end
+
+Todo.find_or_initialize_by_description('Walk the dog').tap do |todo|
+  todo.status = 'complete'
+  todo.save!
+end

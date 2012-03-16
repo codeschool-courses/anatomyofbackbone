@@ -1,8 +1,6 @@
 window.TodosView = Backbone.View.extend({
   initialize: function(){
-    this.addOne = _.bind(this.addOne, this);
-
-    this.collection.on('add', this.addOne);
+    this.collection.on('add', this.addOne, this);
     this.collection.on('reset', this.addAll, this);
   },
 
@@ -13,10 +11,7 @@ window.TodosView = Backbone.View.extend({
 
   addAll: function(){
     this.$el.empty();
-    this.collection.forEach(this.addOne);
-
-    // Todo: Cleanup
-    $('#app').append(this.$el);
+    this.collection.forEach(this.addOne, this);
   },
 
   addOne: function(todoItem){
