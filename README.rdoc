@@ -1,7 +1,7 @@
 == Anatomy of Backbone sample application
 
 This is a sample application used on the CodeSchool course, Anatomy of 
-Backbone.js link:backbone.codeschool.com.
+Backbone.js link:http://backbone.codeschool.com.
 
 
 == Getting Started
